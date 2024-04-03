@@ -9,6 +9,6 @@ import com.generation.gamestore.model.Produto;
 
 public interface ProdutoRepository extends JpaRepository<Produto, Long>{
 
-	public List <Produto> findAllByTituloContainingIgnoreCase(@Param("nome") String nome);
+	public List <Produto> findAllByNomeContainingIgnoreCase(@Param("nome") String nome);
 	
 }
